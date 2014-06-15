@@ -1,0 +1,6 @@
+config defaultToCurrentScreen true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows flase
+config windowHintsSpread true
+bind e:cmd hint asdfjkl;ghrutyvnq
+bind g:cmd grid padding:5 0:7,4 1:9,6
