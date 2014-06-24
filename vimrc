@@ -21,3 +21,15 @@ set shiftwidth=2
 set softtabstop=2
 set smartindent
 set expandtab
+
+set backspace=indent,eol,start   " Make backspace work normally
+
+" Easier Window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Change new splits to open on the right and bottom
+set splitbelow
+set splitright
