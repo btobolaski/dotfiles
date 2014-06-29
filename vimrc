@@ -47,3 +47,6 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+" Strip trailing whitespace on save
+autocmd BufWritePre *.py :%s/\s\+$//e
