@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'derekwyatt/vim-scala'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
