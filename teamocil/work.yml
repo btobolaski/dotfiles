@@ -1,0 +1,10 @@
+session:
+    name: work
+    windows:
+      - name: work
+        root: "~/src"
+        layout: 0fe9,204x51,0,0[204x35,0,0,0,204x15,0,36{102x15,0,36,1,101x15,103,36,2}]
+        panes:
+            - cmd: "ls"
+            - cmd: "ls"
+            - cmd: "ls"
