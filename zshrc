@@ -79,4 +79,6 @@ export PATH="/Users/btobolaski/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
 [[ -a ~/.local_profile ]] && source ~/.local_profile
