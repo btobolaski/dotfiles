@@ -20,6 +20,7 @@ filetype plugin indent on    " required
 
 syntax on
 inoremap jj <ESC>
+set number
 
 " Change leader
 let mapleader=","
