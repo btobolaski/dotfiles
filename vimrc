@@ -62,4 +62,9 @@ augroup END
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " Ignore vendor directories
-set wildignore+=*/_vendor/*
+set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*
+
+" Set custom ctrl-p keybindings
+let g:ctrlp_prompt_mappings = {
+  \ 'PrtClearCache()':      ['<c-r>'],
+  \ }
