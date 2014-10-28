@@ -13,6 +13,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 Plugin 'dag/vim2hs'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
