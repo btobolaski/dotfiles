@@ -14,6 +14,7 @@ Bundle 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 Plugin 'dag/vim2hs'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,13 +59,20 @@ augroup BWCCreateDir
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
+" Set folding to be syntax defined
+set foldmethod=syntax
+
 " Strip trailing whitespace on save
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " Ignore vendor directories
-set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*
+set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*,*/_site/*
 
 " Set custom ctrl-p keybindings
 let g:ctrlp_prompt_mappings = {
   \ 'PrtClearCache()':      ['<c-r>'],
   \ }
+
+" Configure You Complete Me
+set complete=.,b,u,]
+set wildmode=longest,list:longest
