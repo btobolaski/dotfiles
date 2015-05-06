@@ -69,7 +69,7 @@ set foldmethod=syntax
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Ignore vendor directories
-set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*,*/_site/*
+set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*,*/_site/*,*/target/*
 
 " Set custom ctrl-p keybindings
 let g:ctrlp_prompt_mappings = {
