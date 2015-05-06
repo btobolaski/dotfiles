@@ -14,7 +14,10 @@ Bundle 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 Plugin 'dag/vim2hs'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-leiningen'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'kovisoft/paredit'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
