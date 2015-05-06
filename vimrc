@@ -66,7 +66,7 @@ augroup END
 set foldmethod=syntax
 
 " Strip trailing whitespace on save
-autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Ignore vendor directories
 set wildignore+=*/_vendor/*,*/vendor/bundle/*,*/_workspace/*,*/_site/*
