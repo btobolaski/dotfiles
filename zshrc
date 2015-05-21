@@ -81,4 +81,6 @@ export PATH="/Users/btobolaski/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+source ~/.dotfiles/zsh-plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 [[ -a ~/.local_profile ]] && source ~/.local_profile
