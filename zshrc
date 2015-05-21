@@ -84,4 +84,17 @@ bindkey "^[[B" history-beginning-search-forward
 
 source ~/.dotfiles/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.dotfiles/zsh-plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Setup zsh-autosuggestions
+source ~/.dotfiles/zsh-plugins/zsh-autoseggestions/autosuggestions.zsh
+# Enable autosuggestions automatically
+zle-line-init() {
+  zle autosuggest-start
+}
+zle -N zle-line-init
+# use ctrl+t to toggle autosuggestions
+bindkey '^T' autosuggest-toggle
+# Accept suggestions without leaving insert mode
+bindkey '^f' vi-forward-word
+
 [[ -a ~/.local_profile ]] && source ~/.local_profile
