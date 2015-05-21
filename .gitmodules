@@ -7,3 +7,6 @@
 [submodule "zsh-plugins/zsh-autoseggestions"]
 	path = zsh-plugins/zsh-autoseggestions
 	url = https://github.com/tarruda/zsh-autosuggestions.git
+[submodule "tmux_plugins/tpm"]
+	path = tmux_plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git

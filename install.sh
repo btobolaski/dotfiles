@@ -18,5 +18,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 brew install tmux
 
 mkdir -p ~/.tmux/plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# Link this into the directory instead of linking as the directory as tmux-resurrect writes new files into it's plugin directory
+ln -s ~/.dotfiles/tmux_plugins/tpm ~/.tmux/plugins/tpm
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
