@@ -19,6 +19,7 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
 Plugin 'kovisoft/paredit'
+Plugin 'typedclojure/vim-typedclojure'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,6 +45,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Add a binding to delete the current file
+nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
 
 " Change new splits to open on the right and bottom
 set splitbelow
