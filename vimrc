@@ -30,6 +30,7 @@ inoremap jk <ESC>
 inoremap kj <ESC>
 
 set number
+set timeoutlen=500
 
 " Change leader
 let mapleader=","
