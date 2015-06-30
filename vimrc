@@ -26,7 +26,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on
-inoremap jj <ESC>
+inoremap jk <ESC>
+inoremap kj <ESC>
+
 set number
 
 " Change leader
