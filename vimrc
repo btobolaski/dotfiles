@@ -20,6 +20,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
 Plugin 'kovisoft/paredit'
 Plugin 'typedclojure/vim-typedclojure'
+Plugin 'luochen1990/rainbow'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,3 +85,6 @@ let g:ctrlp_prompt_mappings = {
 " Configure You Complete Me
 set complete=.,b,u,]
 set wildmode=longest,list:longest
+
+" Colorize matching parenthesis
+let g:rainbow_active = 1
