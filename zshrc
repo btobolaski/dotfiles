@@ -97,4 +97,11 @@ bindkey '^T' autosuggest-toggle
 # Accept suggestions without leaving insert mode
 bindkey '^f' vi-forward-word
 
+# Function to easily cd within my src directory
+cds() {
+  cd ~/src/$1
+}
+
+compctl -/ -W ~/src cds
+
 [[ -a ~/.local_profile ]] && source ~/.local_profile
